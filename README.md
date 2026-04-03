@@ -10,6 +10,28 @@ AI-powered CLI tools like Claude Code, ChatGPT CLI, and Codex are turning every 
 
 **Long-term:** Evolve into a **virtual workforce dashboard** — a single pane of glass where each CLI session is a worker with a name, a task, a status, and a performance history. Assign work, review output, get alerts, and manage your fleet of AI coding agents the same way a manager oversees a team.
 
+## How CliPilot Differs from Fully Autonomous AI Agents
+
+Think of it like autonomous driving levels:
+
+| Level | Analogy | Example | Human Role |
+|---|---|---|---|
+| **L2** | Hands on wheel | Traditional terminal + manual commands | Fully manual |
+| **L2++ — CliPilot** | Hands off, eyes on road | AI CLI sessions with human oversight via mobile | Supervise, intervene, redirect |
+| **L3** | Fully autonomous | OpenClaw, Devin, fully autonomous agents | Fire and forget |
+
+**Fully autonomous agents (L3)** like OpenClaw dispatch tasks and expect deliverables — no process visibility, no mid-course correction. This works for well-defined, low-risk tasks but carries real risk: the agent may go off track, burn tokens, or deliver something unusable with no chance to intervene.
+
+**CliPilot operates at L2++** — the AI does the heavy lifting, but the human stays in the loop. You monitor live output, provide feedback mid-task, redirect when something goes wrong, and approve before critical actions. For tasks that require multiple rounds of human judgment and iteration, this supervised approach produces more reliable deliverables than full autonomy.
+
+**Both models have a market.** L3 excels at batch, repeatable, well-scoped work. L2++ excels at complex, exploratory, high-stakes work where the cost of a bad deliverable is high. CliPilot starts with L2++ because most real-world AI coding work today demands human context that no prompt can fully capture.
+
+**Long-term, both need management.** Even fully autonomous L3 agents need oversight — tracking what they are working on, reviewing deliverables, catching failures, and reallocating work. The management problem doesn't disappear with more autonomy; it changes shape. CliPilot's vision is to become the unified dashboard for managing AI workers at every autonomy level — whether they need constant supervision or just periodic check-ins.
+
+## Previous Work
+
+This project builds on [claude-code-plugin](https://github.com/chenz16/claude-code-plugin) — a browser-based dashboard for monitoring and managing Claude Code CLI sessions. CliPilot takes the concept mobile-first and expands it to support multiple CLI tools across multiple machines.
+
 ## Core Features
 
 ### 1. Session Discovery
