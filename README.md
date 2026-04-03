@@ -1,6 +1,14 @@
 # CliPilot — Mobile CLI Session Manager
 
-A mobile app to discover, create, monitor, and kill CLI coding sessions (Claude Code, ChatGPT CLI, Codex, etc.) on local and remote machines — like a team manager dashboard for your terminal windows.
+## Problem Statement
+
+AI-powered CLI tools like Claude Code, ChatGPT CLI, and Codex are turning every terminal window into an autonomous worker — writing code, running tests, and deploying fixes with minimal human input. Power users now run multiple sessions across personal machines and remote servers simultaneously. But there is no unified way to oversee them. You are stuck at your desk, switching between terminal tabs, SSH-ing into machines, and losing track of which session is doing what. If you step away from your computer, those virtual workers run blind with no visibility, no control, and no voice.
+
+## Goal
+
+**Short-term:** Build a mobile app that lets CLI users manage all their terminal sessions — across personal computers and remote servers — from their phone. Discover running sessions, create new ones, monitor live output, send commands (by text or voice), and kill sessions that go off track. Each CLI session is treated as a **virtual worker** that you can supervise on the go.
+
+**Long-term:** Evolve into a **virtual workforce dashboard** — a single pane of glass where each CLI session is a worker with a name, a task, a status, and a performance history. Assign work, review output, get alerts, and manage your fleet of AI coding agents the same way a manager oversees a team.
 
 ## Core Features
 
