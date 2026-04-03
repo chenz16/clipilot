@@ -13,7 +13,10 @@ Create / attach / detach / kill any session from mobile. Session creation requir
 ### 3. Live Feed
 Real-time stdout tail for each session via WebSocket stream. A mini read-only terminal on mobile with support for sending simple commands.
 
-### 4. Host Management
+### 4. Voice Control
+Push-to-talk voice input to send commands to active sessions. Uses on-device speech recognition (`expo-speech-recognition` wrapping iOS `SFSpeechRecognizer`) for low-latency, free STT. Optional TTS (`expo-speech`) to read back terminal output. Falls back to OpenAI Whisper API for higher accuracy or multilingual needs.
+
+### 5. Host Management
 Add/remove machines. Supports Tailscale auto-discovery (`tailscale status --json`) and local mDNS/Bonjour scanning. Each host shows online/offline status, OS, and resource usage.
 
 ## Architecture
@@ -85,4 +88,5 @@ clipilot/
 | 3 | **Session List** | Fetch and display sessions from agent API |
 | 4 | **Create / Kill** | Specify folder + CLI type to create session; kill existing ones |
 | 5 | **Live Terminal** | WebSocket stdout tail view on mobile |
-| 6 | **Auto-Discovery** | Tailscale + mDNS discovery (last priority) |
+| 6 | **Voice Control** | Push-to-talk voice input + optional TTS readback |
+| 7 | **Auto-Discovery** | Tailscale + mDNS discovery (last priority) |
