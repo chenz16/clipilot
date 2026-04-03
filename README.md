@@ -1,4 +1,4 @@
-# TermPilot — Mobile CLI Session Manager
+# CliPilot — Mobile CLI Session Manager
 
 A mobile app to discover, create, monitor, and kill CLI coding sessions (Claude Code, ChatGPT CLI, Codex, etc.) on local and remote machines — like a team manager dashboard for your terminal windows.
 
